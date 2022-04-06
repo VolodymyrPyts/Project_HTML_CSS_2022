@@ -1,0 +1,110 @@
+$listlength: 3; //count of advantages //можна перенести у vars
+
+.advantages-list {
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+}
+
+.advantages-list__item {
+    @media screen and (max-width:767px) {
+        max-width: 230px;
+        &+& {
+            margin-top: 32px;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        flex-basis: 184px;
+    }
+
+    @media screen and (min-width:1280px) {
+        flex-basis: 288px;
+        &+& {
+            margin-left: 139px;
+        }
+    }
+
+    &::before {
+        display: block;
+        content: '';
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@for $item from 1 through $listlength {
+    .advantages-list__item:nth-child(#{$item})::before {
+        background-image: url(./../images/advantages-icon#{$item}.png);
+    }
+}
+
+@media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+    @for $item from 1 through $listlength {
+        .advantages-list__item:nth-child(#{$item})::before {
+            background-image: url(./../images/advantages-icon#{$item}@2x.png);
+        }
+    }
+}
+
+@media (min-device-pixel-ratio: 3),(min-resolution: 288dpi),(min-resolution: 3dppx) {
+    @for $item from 1 through $listlength {
+        .advantages-list__item:nth-child(#{$item})::before {
+            background-image: url(./../images/advantages-icon#{$item}@3x.png);
+        }
+    }
+}
+
+.advantages-list__text {
+    margin-top: 16px;
+
+    font-family: 'Titan One';
+    font-size: 36px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+    @media screen and (max-width:767px) {
+    text-transform: uppercase;
+    }
+
+    color: var(--first-accent-color);
+
+    @media screen and (min-width:768px) {
+        margin-top: 36px;
+
+        font-size: 48px;
+        line-height: 1.15;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-top: 40px;
+
+        font-size: 58px;
+        line-height: 1.14;
+    }
+}
+
+.advantages-list__description {
+   margin-top: 20px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.70;
+
+    color: #000000;
+
+    @media screen and (min-width:768px) {
+        margin-top: 13px;
+
+        font-size: 14px;
+        line-height: 1.74;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-top: 16px;
+
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.02em;
+    }
+}

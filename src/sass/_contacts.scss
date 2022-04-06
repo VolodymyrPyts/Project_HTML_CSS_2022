@@ -1,0 +1,208 @@
+.contacts {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 19%, rgba(255, 245, 246, 1) 
+    19%);
+}
+
+.cards{
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        margin: -16px;
+    }     
+}
+
+.cards__item {  
+    background-color: var(--white-text-color);
+    border-radius: 24px;
+    padding: 40px 32px;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+    &:nth-of-type(2) {
+        .cards__label {
+            width: 130px;
+            background-color: #C2E297;
+            
+        }
+    }
+    @media (min-width: 768px) {
+        width: calc((100% - 96px) / 3);
+        margin: 16px;    
+    }  
+    @media (min-width: 1280px) {
+        padding: 40px;
+    }
+}
+
+
+.brd {
+    border-top: 1px solid rgba(225, 225, 225, 1);
+}
+
+.cards__label {
+    display: block;
+    text-align: center;
+    letter-spacing:0.04em;
+    margin: 0;
+    border-radius: 4px;
+    background-color: #F0D1A5;
+    color: var(--white-text-color);
+    text-transform: uppercase;
+    width: 80px;
+    height:16px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.33;
+    @media (min-width: 768px) {
+        width:73px;
+        height: 28px;
+        font-size: 16px;
+        line-height: 1.83;
+    }
+
+    @media (min-width: 1280px) {
+        width:75px;
+        line-height: 1.88;
+    }   
+}
+
+.cards__text{
+    color: #907E82;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04;
+    @media (min-width: 768px) {
+    font-size: 14px;
+    line-height:1.64;
+    }
+    @media (min-width: 1280px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+    }
+}
+
+.cards__schedule-item {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.04;
+    line-height: 1.83;
+    @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.85;
+    }
+    @media (min-width: 1280px) {
+    font-size: 16px;
+    line-height:1.88;
+    }
+}
+
+.cards__schedule-hours {
+    color: var(--second-accent-color);
+}
+
+.info__item-link {
+    color: var(--second-text-color);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    @media (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.85;
+    }
+    @media (min-width: 1280px) {
+        font-size: 16px;
+        line-height:1.81;
+    }
+ }
+  
+  
+.cards__top {
+    padding-bottom: 24px;
+}
+
+.cards__schedule {
+    padding: 24px 0;
+}
+
+.info {
+    padding-top: 24px;
+}
+
+.cards__title {
+    margin: 32px 0 8px 0;
+}
+
+.contacts__buttons li {
+    margin: 0;
+}
+
+
+.contacts__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 32px;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        margin-top: 40px;
+    }
+    @media (min-width: 1280px) {
+        margin-top: 60px;
+}
+}
+
+.contacts__buttons--pink,
+.contacts__buttons--white {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.31;
+    border: transparent;
+    text-align: center; 
+    border-radius: 22px; 
+    width: 161px;
+    height: 44px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts__buttons--pink {
+    background-color: #D41342;
+    color:white;
+    @media (max-width: 768px) {    
+        margin-bottom: 10px;
+    }
+    
+    @media (min-width: 768px) {
+        width: 191px;
+        margin-right: 15px;
+    }
+    @media (min-width: 1280px) {
+        width: 198px;
+    }
+}
+
+.contacts__buttons--white {
+    background-color: white;
+    color: #D41342;
+    &:focus,
+    &:hover {
+            background-color: var(--button-white-hover);
+        }
+    @media (min-width: 768px) {
+        width: 175px;
+    }
+    @media (min-width: 1280px) {
+        width: 180px;
+    }    
+}
+
+.button__icon--pink, 
+.button__icon--white {
+    margin-left: 13px;
+}
+
