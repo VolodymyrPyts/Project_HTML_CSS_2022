@@ -1,0 +1,16 @@
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--background-white-color);
+    font-size: 12px;
+   }
+
+.button {
+    border: none;
+    cursor: pointer;
+}
