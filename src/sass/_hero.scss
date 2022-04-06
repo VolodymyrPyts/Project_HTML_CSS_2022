@@ -1,0 +1,228 @@
+.hero {
+  font-family: 'Titan One';
+  margin-top: -1px;
+  padding-top: 196px;
+  padding-bottom: 158px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 102px;
+    padding-bottom: 56px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 147px;
+    padding-bottom: 84px;
+  }
+  .container {
+    height: 100%;
+    background-color: #ffb8ca;
+    background-image: url(../images/top-ice-cream-mobile.png), url(../images/ellipse-pink.svg);
+    background-repeat: no-repeat;
+    background-position: right 32px top 100%, top 83px left 36px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/top-ice-cream-mobile@2x.png'),
+        url(../images/ellipse-pink.svg);
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('../images/top-ice-cream-mobile@3x.png'),
+        url(../images/ellipse-pink.svg);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/top-ice-cream-tablet.png), url(../images/milk-tablet.png),
+        url(../images/girl-tablet.png), url(../images/ellipse-pink.svg);
+      background-repeat: no-repeat;
+      background-position: left 50% bottom 0, bottom 16px left 32px, bottom 0px right 32px,
+        top 43px left 250px;
+      background-size: 143px 336px, 152px 154px, 190px 150px, 335px 335px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/top-ice-cream-tablet@2x.png),
+          url(../images/milk-tablet@2x.png), url(../images/girl-tablet@2x.png),
+          url(../images/ellipse-pink.svg);
+      }
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url(../images/top-ice-cream-tablet@3x.png),
+          url(../images/milk-tablet@3x.png), url(../images/girl-tablet@3x.png),
+          url(../images/ellipse-pink.svg);
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/top-ice-cream-desktop.png), url(../images/milk-desktop.png),
+        url(../images/girl-desktop.png), url(../images/ellipse-pink.svg);
+      background-repeat: no-repeat;
+      background-position: right 408px bottom 0, bottom 60px left 16px, bottom 0px right 32px,
+        top 57px right 229px;
+      background-size: 236px 557px, 152px 154px, 190px 150px, 534px 534px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/top-ice-cream-desktop@2x.png),
+          url(../images/milk-desktop@2x.png), url(../images/girl-desktop@2x.png),
+          url(../images/ellipse-pink.svg);
+      }
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url(../images/top-ice-cream-desktop@3x.png),
+          url(../images/milk-desktop@3x.png), url(../images/girl-desktop@3x.png),
+          url(../images/ellipse-pink.svg);
+      }
+    }
+  }
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__title {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.13;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 38px;
+    line-height: 1.15;
+  }
+}
+
+.hero__title-accent {
+  font-size: 48px;
+  line-height: 0.965;
+  color: var(--first-accent-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.91;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
+}
+
+.hero__btn-list {
+  display: flex;
+}
+
+.hero__btn-item {
+  & + & {
+    margin-left: 8px;
+  }
+}
+
+.hero__btn {
+  font-family: 'DM Sans';
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+
+  .hero__btn-item:first-child & {
+    background: var(--first-accent-color);
+    color: var(--white-text-color);
+  }
+  .hero__btn-item:last-child & {
+    background: var(--white-text-color);
+    color: var(--first-accent-color);
+  }
+}
+
+.hero__description {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  margin-top: 61px;
+  margin-left: 184px;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 108px;
+    margin-left: 229px;
+  }
+}
+
+.hero__paragraf {
+  width: 114px;
+
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  color: var(--white-text-color);
+  margin-bottom: 7px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
+    width: 200px;
+
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.hero__link-arrow {
+  height: 18px;
+  width: 18px;
+
+  border-radius: 50%;
+}
+
+.property__list {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.property__item {
+  background-image: url(../images/ellipse.svg);
+  background-size: 16px 16px;
+  background-position: right 3px top 8px;
+  background-repeat: no-repeat;
+
+  padding: 10px;
+  margin: -10px;
+}
+.property__title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--first-accent-color);
+}
+
+.property__text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+
+  color: var(--white-text-color);
+}

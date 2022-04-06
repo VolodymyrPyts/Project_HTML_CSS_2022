@@ -1,0 +1,115 @@
+.review-list__item {
+    width: 100%;
+    text-align: center;
+}
+.review-list__pic {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 44px;
+    margin-bottom: 32px;
+    overflow: hidden;
+    @media screen and (min-width:768px){
+        margin-bottom: 24px;
+     };
+     @media screen and (min-width:1280px){
+        margin-bottom: 36px;
+     };
+    }
+
+.review-list__img{
+    margin-left: auto;
+    margin-right: auto;   
+    margin-bottom: 32px;
+    border-radius: 50%;
+}
+
+.review-list__text-wrap {
+        margin: auto;
+    background-color:#FAFAFA;
+    padding: 43px 58px 26px 62px;
+    margin-bottom: 24px;
+    @media screen and (min-width:768px){
+        margin-bottom: 36px;
+        padding: 20px 6px 36px 6px;
+        max-width: 620px;
+     };
+     @media screen and (min-width:1280px){
+        padding: 32px 106px 32px 106px;
+        max-width: 1034px;
+     };
+    }    
+
+
+.review-list__text-wrap--underline{
+        background-image: repeating-linear-gradient(
+            to bottom, 
+            transparent,
+            transparent 30px,
+            #E1E1E1 1px,
+            #E1E1E1 31px
+        );
+    }
+
+.review-list__text{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+    color: var(--first-text-color);
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    padding: 0 15px 8px 9px;
+
+    &::before{
+        content: '';
+        background-image: url('../images/quote.svg');
+        width: 54px;
+        height: 40px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -10px;
+        left: -35px;
+     };
+}    
+
+.review-list__subtext {
+    position: relative;
+font-weight: 500;
+font-size: 14px;
+line-height: 186%;
+text-align: center;
+color: var(--first-text-color);
+
+&::before{
+    content: '';
+    background-image: url('../images/red-dots.svg');
+    width: 32px;
+    height: 4px;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 4px;
+    left: 50%;
+    top: -16px;
+    position: absolute;
+    transform: translateX(-50%)
+ };
+ 
+ @media screen and (min-width:768px){
+    margin-bottom: 32px;
+ };
+ @media screen and (min-width:1280px){
+    margin-bottom: 16px;
+ };
+}
+
+.pagination-list{
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-list__item{
+    &:not(:last-child){
+        margin-right: 18px;
+    };
+}
