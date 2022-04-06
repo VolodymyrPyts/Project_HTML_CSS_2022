@@ -4,13 +4,14 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './base/modern-normalize';
-@import './container';
-@import './section';
+
+
 @import './base/common';
 @import './base/reset';
 @import './utils/hidden';
 @import './utils/vars';
+@import './container';
+@import './section';
 @import './header';
 @import './hero';
 @import './products';
