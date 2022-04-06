@@ -11,10 +11,12 @@
 .section--pink {
     background-color: var(--background-pink-color);
 }
-.section--color {
-    background: #ffb8ca;
+
+.section--nonTopPad {
+    padding-top: 0;
 }
 
-.section--nonPad {
-    padding-top: 0;
+.section--nonBottomPad {
+    padding-bottom: 0;
+    background-color: #ffb8ca;
 }
