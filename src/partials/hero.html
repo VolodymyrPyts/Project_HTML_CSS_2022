@@ -1,4 +1,4 @@
-<section class="hero section--nonBottomPad">
+<section class="hero section--nonBottomPad section--hero">
     <div class="container hero__container">
         <div class="hero-content">
             <div>
@@ -13,7 +13,7 @@
                     </li>
                 </ul>
                 <div class="hero__goods"> 
-                    <picture>
+                    <picture class="hero__milk">
                         <source srcset="
                               ./images/milk-desktop.png 1x,
                               ./images/milk-desktop@2x.png 2x,
@@ -47,18 +47,55 @@
                 </li>
             </ul>
         </div>
-        <picture class="hero__ellipse" width="535" height="535">
+        <picture class="hero__ellipse">
             <source srcset="
-                                      ./images/ellipse-pink.png 1x,
-                                      ./images/ellipse-pink@2x.png 2x,
-                                      ./images/ellipse-pink@3x.png 3x
+                ./images/ellipse-pink.png 1x,
+                ./images/ellipse-pink@2x.png 2x,
+                ./images/ellipse-pink@3x.png 3x
                                     " media="(min-width: 1280px)" />
             <source srcset="
-                                      ./images/milk-tablet.png    1x,
-                                      ./images/milk-tablet@2x.png 2x,
-                                      ./images/milk-tablet@3x.png 3x
+                ./images/ellipse-pink-tadl.png    1x,
+                ./images/ellipse-pink-tadl@2x.png 2x,
+                ./images/ellipse-pink-tadl@3x.png 3x
                                     " media="(min-width: 768px)" />
-            <img class="milk__png" src="./images/milk-tablet.png" alt="Галлерея" />
+            <source srcset="
+                ./images/ellipse-pink-mob.png    1x,
+                ./images/ellipse-pink-mob@2x.png 2x,
+                ./images/ellipse-pink-mob@3x.png 3x
+                                                                        " media="(min-width: 768px)" />
+            <img class="milk__png" src="./images/ellipse-pink-mob.png" alt="Галлерея" />
+        </picture>
+        <picture class="hero__iceCrem">
+            <source srcset="
+                        ./images/top-ice-cream-desktop.png 1x,
+                        ./images/top-ice-cream-desktop@2x.png 2x,
+                        ./images/top-ice-cream-desktop@3x.png 3x
+                                            " media="(min-width: 1280px)" />
+            <source srcset="
+                        ./images/top-ice-cream-tablet.png    1x,
+                        ./images/top-ice-cream-tablet@2x.png 2x,
+                        ./images/top-ice-cream-tablet@3x.png 3x
+                                            " media="(min-width: 768px)" />
+            <source srcset="
+                        ./images/top-ice-cream-mobile.png    1x,
+                        ./images/top-ice-cream-mobile@2x.png 2x,
+                        ./images/top-ice-cream-mobile@3x.png 3x
+                                                                                " media="(min-width: 768px)" />
+            <img class="milk__png" src="./images/top-ice-cream-mobile.png" alt="Галлерея" />
+        </picture>
+        <picture class="hero__girl">
+        <source srcset="
+                        ./images/girl-desktop.png 1x,
+                        ./images/girl-desktop@2x.png 2x,
+                        ./images/girl-desktop@3x.png 3x
+                                            " media="(min-width: 1280px)" />
+        <source srcset="
+                        ./images/girl-tablet.png    1x,
+                        ./images/girl-tablet@2x.png 2x,
+                        ./images/girl-tablet@3x.png 3x
+                                            " media="(min-width: 768px)" />
+                                                                                        
+        <img class="milk__png" src="./images/girl-tablet.png" alt="Галлерея" />
         </picture>
     </div>
 </section>
