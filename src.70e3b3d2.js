@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/advantages-icon1.png":[["advantages-icon1.92c1480d.png","ErPv"],"ErPv"],"./../images/advantages-icon2.png":[["advantages-icon2.33a9f424.png","oPZ7"],"oPZ7"],"./../images/advantages-icon3.png":[["advantages-icon3.86830ac8.png","KxSN"],"KxSN"],"./../images/advantages-icon1@2x.png":[["advantages-icon1@2x.0448c555.png","Jn8u"],"Jn8u"],"./../images/advantages-icon2@2x.png":[["advantages-icon2@2x.ce98319a.png","gKrr"],"gKrr"],"./../images/advantages-icon3@2x.png":[["advantages-icon3@2x.7495aeac.png","Yngf"],"Yngf"],"./../images/advantages-icon1@3x.png":[["advantages-icon1@3x.cffe2ddb.png","E0AK"],"E0AK"],"./../images/advantages-icon2@3x.png":[["advantages-icon2@3x.17a15234.png","CM3e"],"CM3e"],"./../images/advantages-icon3@3x.png":[["advantages-icon3@3x.f08505d5.png","kE0t"],"kE0t"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/Project_HTML_CSS_2022/src.72ffc35b.js.map
+//# sourceMappingURL=/Project_HTML_CSS_2022/src.70e3b3d2.js.map
