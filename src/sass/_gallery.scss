@@ -6,19 +6,7 @@
     rgba(255, 255, 255, 1) 60%
   );
 }
-
-.gallery {
-  margin: auto;
-  width: 364px;
-  height: 122px;
-
-  @media screen and (min-width: 768px) {
-    width: 786px;
-    height: 264px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-    height: 430px;
-  }
+.gallery__png {
+  margin-left: auto;
+  margin-right: auto;
 }
