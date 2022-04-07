@@ -1,4 +1,4 @@
-const slider = document.querySelector("[touch-slider]");
+const slider = document.querySelector(".review-list");
 const slides = document.querySelectorAll("[data-slide]");
 const pagination = document.querySelectorAll("[data-pagination]");
 const dots = document.querySelectorAll("[data-icon-dot]");
