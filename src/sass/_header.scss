@@ -31,7 +31,7 @@
   align-items: center;
   justify-content: end;
   width: 100%;
-  margin-left: 60px;
+  // margin-left: 60px;
   @media screen and (min-width: 768px) {
   margin-left: 290px;  
   }
@@ -46,6 +46,8 @@
 
 .mob-menu-open-btn {
   margin-left: auto;
+  padding: 0;
+  height: 20px;
   border: none;
   background: none;
   fill: var(--first-accent-color);
@@ -63,7 +65,7 @@
 .mob-menu__burger {
   
 height: 100%;
-width: 100%;
+// width: 100%;
 
   fill: var(--first-accent-color);
 }
