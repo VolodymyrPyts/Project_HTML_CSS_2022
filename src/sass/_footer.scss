@@ -15,7 +15,7 @@
 }
 
 .footer-wrap__text {
-
+margin-bottom: 40px;
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: column;
@@ -54,7 +54,7 @@
 }
 
 .footer-text-maine {
-    margin-bottom: 40px;
+    
     width: 200px;
 
     font-family: 'Titan One';

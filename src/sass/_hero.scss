@@ -1,21 +1,27 @@
 .hero {
+  position: relative;
   font-family: 'Titan One';
   margin-top: -1px;
+  overflow: hidden;
+  padding-bottom: 158px;
+  padding-top: 194px;
   
-  // padding-top: 196px;
-  // padding-bottom: 158px;
-
   @media screen and (min-width: 768px) {
-    // padding-top: 102px;
-    // padding-bottom: 56px;
+    padding-bottom: 20px;
+    padding-top: 102px;
   }
 
   @media screen and (min-width: 1280px) {
-    
+      padding-bottom: 60px;
+      padding-top: 147px;
     
   }}
 
-  .hero__goods{position: relative;
+  .hero__goods{
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    position: relative;
     display: flex;
     align-items: center;
     z-index: 12;
@@ -23,23 +29,20 @@
   }
 
   .hero__container {
-    position: relative;
-  padding-bottom: 158px;
-  padding-top: 194px;
+    // position: relative;
+ 
     z-index: 10;
     height: 100%;
     background-color: #ffb8ca;
 
 
     @media screen and (min-width: 768px) {
-    padding-bottom: 20px;
-    padding-top: 102px;
+   
       
     }
 
     @media screen and (min-width: 1280px) {
-        padding-bottom: 60px;
-        padding-top: 147px;
+     
    
   }}
 
@@ -97,6 +100,7 @@
 }
 
 .hero__btn {
+  display: block;
   font-family: 'DM Sans';
   border-radius: 20px;
   padding: 10px 15px;

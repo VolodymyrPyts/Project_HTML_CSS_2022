@@ -64,10 +64,11 @@
   align-items: center;
   border-radius: 50%;
   cursor: pointer;
+  transition: color var(--cube-anime) var(--time-anime);
 
   & .modal__imgs:focus,
   & .modal__imgs:hover {
-    fill: #2196f3;
+    fill: var(--mob-menu-color);
   }
 }
 

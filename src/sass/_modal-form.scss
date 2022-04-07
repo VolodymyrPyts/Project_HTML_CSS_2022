@@ -13,6 +13,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+ 
 }
 
 .js-speaker-form__title {
@@ -67,11 +68,11 @@ color: #212121;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:focus {
-    border-color: #2196F3;
+    border-color: var(--second-accent-color);
   
   }
   &:focus ~ .js-box__svg {
-    fill: #2196F3;
+    fill:  var(--second-accent-color);
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
