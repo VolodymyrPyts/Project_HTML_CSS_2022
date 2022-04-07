@@ -176,6 +176,9 @@
   padding: 10px;
   margin-bottom: 10px;
 }
+
+.property__ellipse{}
+
 .property__png{
 position: absolute;
 top: 5px;
@@ -187,9 +190,10 @@ right: 5px;
 }
 
 .property__title {
+  position: relative;
   font-weight: 400;
   font-size: 28px;
-  line-height: 32px;
+  line-height: 1.14;
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -240,6 +244,7 @@ height: 535px;
     
   }
 }
+
 .hero__girl {
   display: none;
 
