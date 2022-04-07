@@ -167,14 +167,25 @@
 }
 
 .property__item {
-  background-image: url(../images/ellipse.svg);
+  position: relative;
+  
   background-size: 16px 16px;
   background-position: right 3px top 8px;
   background-repeat: no-repeat;
 
   padding: 10px;
-  margin: -10px;
+  margin-bottom: 10px;
 }
+.property__png{
+position: absolute;
+top: 5px;
+right: 5px;
+@media screen and (min-width: 1280px) {
+  top: -5px;
+  right: -5px;
+}
+}
+
 .property__title {
   font-weight: 400;
   font-size: 28px;
@@ -235,13 +246,13 @@ height: 535px;
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     right: 0
     ;
   }
 
   @media screen and (min-width: 1280px) {
-
+bottom: -60px;
     right: 17px;
   }
 }
