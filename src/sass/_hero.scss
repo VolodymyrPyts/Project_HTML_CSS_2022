@@ -235,15 +235,16 @@ height: 535px;
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     right: 0
     ;
   }
 
   @media screen and (min-width: 1280px) {
-
-    right: 17px;
+    bottom: -60px;
+    right: 0;
   }
+  
 }
 
 .hero__iceCrem {
