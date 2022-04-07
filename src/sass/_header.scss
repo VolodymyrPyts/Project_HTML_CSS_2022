@@ -23,7 +23,9 @@
     justify-content: space-between;
   }
 }
-
+.logo{
+  max-width: fit-content;
+}
 .tab-menu {
   display: flex;
   align-items: center;
