@@ -51,7 +51,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  z-index: 20;
+  z-index: 1;
 }
 .hero__title {
   font-weight: 400;
@@ -236,7 +236,8 @@ height: 535px;
     display: block;
     position: absolute;
     bottom: 0;
-    right: 32px;
+    right: 0
+    ;
   }
 
   @media screen and (min-width: 1280px) {
